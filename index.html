@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bd57741918.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.PNG" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hello! I'm <span>Talha</span><br>Jabbar From Pakistan</h1>
+            </div>
+        </div>
+    </div>
+
+    <!------------- About ----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Highly energetic, motivated, resourceful and goal-driven Web Developer with a solid commitment to excellence. As a web developer I aim to turn any business idea of my clients into reality by making a full-fledge website as per requirements. I am adaptive to new technologies and market trends to not only meet the current standards of the industry but also to improve my skills continuously.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Event Planning</span><br>Society Events Management</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Python Development</span><br>Python Applications</li>
+                            <li><span>Android Development</span><br>Mobile Applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Aug 2023 - Current</span><br>Web Development Intern at CodSoft</li>
+                            <li><span>Jul 2022 - Current</span><br>Vice President at Event Society of Software Engineering(ESSE), LGU</li>
+                            <li><span>Jul 2021 - Sep 2021</span><br>Course Coordinator in Summer Workshop</li>
+                            <li><span>Jul 2020 - May 2022</span><br>Information Secretary at Event Society of Software Engineering(ESSE), LGU</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2024</span><br>BS Software Engineering from Lahore Garrison University (LGU)</li>
+                            <li><span>2017 - 2019</span><br>FSc Pre-Medical from PGC Campus 8, Lahore</li>
+                            <li><span>2015 - 2017</span><br>Matriculation from Sciety Public Boys High School, Lahore</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------- services --------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>As a web developer I always make sure that all clients satisfy with my work. So that's why I put my all effort into doing every little bit task.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Developer</h2>
+                    <p>I have worked on many python projects. You can view these on my GithGub Profile. I am adapted to new technologies and trends.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-calendar-days"></i>
+                    <h2>Event Planning</h2>
+                    <p>I have quite a lot experience in managing events. I have worked as Event Head in departmental society of Software Engineering, LGU as well.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------  Portfolio  ----------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Responsive E-Learning Website (Academic Zone)</h3>
+                        <p>Website allows you to see the popular and trending courses in the market. It has also contact support and the FAQs section.</p>
+                        <a href="https://github.com/Talha-Jabar/Responsive-E-Learning-Web-Application.git"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Android Calculator App</h3>
+                        <p>User-friendly interface which takes input from the user and display the result after performing operations.</p>
+                        <a href="https://github.com/Talha-Jabar/Android-Calculator-App.git"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Bank ATM System in OOP (Python)</h3>
+                        <p>There are 2 types of accounts and in both accounts there are four operations to perform. This is basically a project based on OOP concepts.</p>
+                        <a href="https://github.com/Talha-Jabar/Bank-ATM-System.git"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Talha-Jabar" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!---------------------- Contact --------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>jabbart29@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+92 309 2056720</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/talha.jabbar.585?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/TalhaJabbar17?t=z6evgIDTRc3HozjSh1HC1g&s=09"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://instagram.com/tlha_jbar22?igshid=ZGUzMzM3NWJiOQ=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/talha-jabbar-067ba6203/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Talha Jabbar CV.pdf" download class="btn btn2"> Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/mnqkdgaa" method="POST">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Type Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                Copyright &copy; Talha Jabbar <i class="fa-sharp fa-solid fa-heart"></i> Web Developer
+            </p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        
+        function opentab(tabname){
+
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = '0'
+        }
+        function closemenu() {
+            sidemenu.style.right = '-200px'
+        }
+
+    </script>
+
+
+</body>
+</html>
